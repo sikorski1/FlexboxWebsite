@@ -290,7 +290,7 @@ body {
   height: 100%;
   border-radius: 8px;
   background-size: cover;
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.6s, opacity 1s;
 }
 .islands__card-img--first {
   background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/water-3354063_640.jpg");
@@ -327,7 +327,7 @@ body {
   border-radius: 8px;
   opacity: 0;
   transform: rotateY(180deg);
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.6s, opacity 1s;
 }
 .islands__card-info-title {
   position: absolute;
@@ -423,6 +423,9 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
+  }
+  .islands__card-info-list-item {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 992px) {

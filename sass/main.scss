@@ -245,7 +245,7 @@ body {
 			height: 100%;
 			border-radius: 8px;
 			background-size: cover;
-			transition: transform 1s, opacity 1s;
+			transition: transform 0.6s, opacity 1s;
 
 			&--first {
 				background-image: $light-blue-gradient, url('../img/water-3354063_640.jpg');
@@ -288,7 +288,7 @@ body {
 			border-radius: 8px;
 			opacity: 0;
 			transform: rotateY(180deg);
-			transition: transform 1s, opacity 1s;
+			transition: transform 0.6s, opacity 1s;
 
 			&-title {
 				@include islandCardStyles;
@@ -415,6 +415,9 @@ body {
 		&__card {
 			margin: 1em;
 			width: 45%;
+			&-info-list-item {
+				font-size: 1.6rem;
+			}
 		}
 	}
 }
