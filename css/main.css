@@ -366,6 +366,10 @@ body {
   background-color: #0fe29c;
 }
 
+.offers {
+  position: relative;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     flex-direction: row;
