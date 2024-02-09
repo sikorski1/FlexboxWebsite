@@ -392,7 +392,7 @@ body {
 
 // MAIN REVIEWS SECTION
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
 	.reviews.section-padding {
 		padding: 6em 0;
 	}
@@ -452,7 +452,8 @@ body {
 		background-color: $dark;
 	}
 
-	&__form, &__form-top {
+	&__form,
+	&__form-top {
 		display: flex;
 		flex-direction: column;
 	}
@@ -460,7 +461,6 @@ body {
 	&__form-label {
 		margin-bottom: 0.5em;
 		text-transform: uppercase;
-
 	}
 
 	&__form-input {
@@ -489,6 +489,52 @@ body {
 		&::before {
 			background-color: $secondary-color;
 		}
+	}
+}
+
+//FOOTER
+
+.footer {
+	color: $pure-white;
+	background-color: $dark;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__box-social {
+		margin: 2em 0 1em;
+	}
+
+	&__box-link {
+		padding: 0 0.3em;
+		font-size: 3.6rem;
+		color: $pure-white;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $light-white;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
 	}
 }
 
@@ -612,6 +658,45 @@ body {
 			width: 45%;
 			&-info-list-item {
 				font-size: 1.6rem;
+			}
+		}
+	}
+
+	//FOOTER
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+
+		&__box-title {
+			font-size: 2.4rem;	
+		}
+
+		&__box-list {
+			list-style: none;
+		}
+
+		&__box-list-item {
+			margin-bottom: 1em;
+
+			a {
+				color: $light-white;
+				text-decoration: none;
 			}
 		}
 	}
