@@ -17,6 +17,7 @@ body {
 	font-size: 1.6rem;
 }
 
+
 //NAV
 
 .burger-btn {
@@ -127,6 +128,12 @@ body {
 	to {
 		transform: translateX(0);
 	}
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
 }
 
 //HEADER
@@ -684,7 +691,7 @@ body {
 		}
 
 		&__box-title {
-			font-size: 2.4rem;	
+			font-size: 2.4rem;
 		}
 
 		&__box-list {
@@ -743,6 +750,7 @@ body {
 			font-size: 2.2rem;
 		}
 	}
+
 	//MEDIA MAIN HERO-IMG SECTION
 
 	.hero-img {
@@ -756,6 +764,7 @@ body {
 	}
 
 	//MAIN OFFERS SECTION
+
 	.offers {
 		background-image: $blue-gradient, url('../img/offers_big.jpg');
 
